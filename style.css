@@ -16,10 +16,11 @@ header {
 }
 
 header div {
-    font-size: 15px;
+    font-size: 13px;
     color: #242E52;
     display: flex;
     align-items: center
+
 }
 
 header nav ul{
@@ -40,5 +41,59 @@ header div button {
     border: none;
     padding: 12.50px 30.50px ;
     border-radius: 50px;
+}
+
+.together { 
+    display: flex;
+    margin-right: 166px;
+    margin-left: 166px;
+    justify-content: space-between;   
+}
+
+.together h2 {
+    color: #232C50;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 66px;
+    letter-spacing: 0.5px;
+}
+
+.together p {
+    color: #000000;
+    font-size: 16.56px;
+    line-height: 26px;
+    margin-right: 120px; 
+    margin-top: 10px;  
+}
+
+.together button{
+    background-color:#F3603B;
+    color: #FFFFFF;
+    border: none;
+    padding: 12.50px 30.50px ;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.aboutmanage {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+.aboutmanage div h3 {
+    color: #232851;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.aboutmanage p {
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 150px;
+    margin-top: 10px;
+    line-height: 24px;
 }
 
