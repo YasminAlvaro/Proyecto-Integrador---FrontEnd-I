@@ -11,8 +11,10 @@ body{
 
 header {
     display: flex;
+    flex-wrap: wrap 
     justify-content: space-between;
     padding: 75px 190px ;
+
 }
 
 header div {
@@ -218,11 +220,6 @@ footer {
     padding: 67px 196px;
 }
 
-/*body footer section:nth-child(1) {
-    flex-direction: column;
-    align-content: space-between;
-}*/
-
 body footer section:nth-child(1) div:nth-child(2) i{
     color: white;
     height: 20px;
@@ -267,3 +264,19 @@ body footer section:nth-child(4) p{
     color: #8C8C94;
     font-size: 12.5px;
 }
+
+@media  (max-width:375px) {
+      header div {
+          width: 100%;
+      }
+
+      header nav{
+        display: none;
+      }
+      header nav div button{
+        display: none; 
+      }
+      header {
+          
+      }
+    }
