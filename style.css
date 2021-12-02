@@ -2,27 +2,30 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
 }
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
+    background-image: url("img/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    
 }
 
 header {
     display: flex;
-    flex-wrap: wrap 
-    justify-content: space-between;
+    /*flex-wrap: wrap */
+    justify-content: space-around;
     padding: 75px 190px ;
-
+    width: 100%;
 }
 
-header div {
-    font-size: 13px;
+header div img {
+    width: 200px;
     color: #242E52;
     display: flex;
-    align-items: center
-
+    align-items: center;
 }
 
 header nav ul{
@@ -32,6 +35,9 @@ header nav ul{
     font-size: 13px;
     margin-left: 10px;    
 }
+ #menuIcon {
+     display: none;
+ }
 
 header nav ul li {
     margin-left: 20px;
@@ -44,12 +50,18 @@ header div button {
     padding: 12.50px 30.50px ;
     border-radius: 50px;
 }
+body main {
+    width: auto;
+}
 
 .together { 
     display: flex;
-    margin-right: 166px;
-    margin-left: 166px;
-    justify-content: space-between;   
+    justify-content: space-evenly;   
+    margin:0;
+}
+
+#bring {
+    padding: 120px;
 }
 
 .together h2 {
@@ -75,6 +87,10 @@ header div button {
     padding: 12.50px 30.50px ;
     border-radius: 50px;
     margin-top: 30px;
+}
+
+#imagengrupal {
+   padding:60px;
 }
 
 .aboutmanage {
@@ -192,7 +208,7 @@ body main section:nth-child(4){
     padding: 50px;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: wrap;
     align-items: center;
     padding: 64px 165px;
 }
@@ -265,18 +281,147 @@ body footer section:nth-child(4) p{
     font-size: 12.5px;
 }
 
-@media  (max-width:375px) {
-      header div {
-          width: 100%;
-      }
-
-      header nav{
+@media (max-width:375px) {
+      /*header {
+          width: 100%;*/
+    header nav{
         display: none;
-      }
-      header nav div button{
-        display: none; 
-      }
-      header {
-          
-      }
     }
+
+    body header div button{
+        display: none; 
+    }
+
+    header {
+        padding: 50px 300px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #menuIcon {
+        display:inline-block;
+        color: #232C50;
+        font-size: 24px;
+        padding-left: 300px;
+    }
+
+    .together{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 600px;
+    }
+
+    #imagengrupal {
+        align-items: center;
+    }
+
+    #bring {
+        align-items: center;
+        text-align: center;
+    }
+
+    #bring p {
+        text-align: center;
+        margin: 0;
+        padding-left: 60px;
+    }
+
+    #bring p button{
+        justify-content: center;
+    }
+
+    .aboutmanage {
+        flex-direction: column;
+        align-items: center;
+        width: 580px;
+    }
+    .aboutmanage div:nth-child(1){
+        margin-bottom: 50px;
+    }
+     main section:nth-child(3) article:nth-child(1){
+         display: none;
+     }
+
+     main section:nth-child(3) article:nth-child(3){
+        display: none;
+    }
+
+    body main section:nth-child(3) {
+        width: 500px;
+        align-items: center;
+    }
+
+    #botonfinal {
+        display: inline-block;
+        left: 200px;
+    }
+    
+    body main section:nth-child(4) {
+        width: max-content;
+        /*width: 600px;*/
+        padding:120px;
+        background-color: #F3613C;
+        flex-direction: column;
+    }
+
+    body main section:nth-child(4) button {
+        margin-top: 50px;
+    }
+
+    footer {
+        /*padding: 185px;*/
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        position: relative;
+        width: min-content;
+        padding:200px;
+    }
+    
+    .nav2{
+        display: flex;
+        flex-direction: column;
+        order: 3;
+        margin: 10px 10px;
+    }
+    .nav1{
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        margin: 10px 10px;
+    }
+
+    .formfinal{
+        display: flex;
+       /* flex-direction: column-reverse;*/
+      /*  justify-content: center;*/
+      /* align-items: center;*/
+        order: -2;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .logofooter{
+        /*display: flex;
+        align-items: center;*/
+        order: 4;
+        margin: 0px 30px;
+    }
+
+   #copyright{
+        position: absolute;
+        bottom: 0px;
+        margin: 20px;
+    }
+
+    #redsocial {
+        flex-direction: column-reverse;
+    }
+    #formsection{
+        position: absolute;
+        top: 20px;
+        margin: 20px;
+    }
+
+       
+}
